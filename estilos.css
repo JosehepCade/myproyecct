@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:
+    radial-gradient(circle at top right,
+    rgba(170,255,200,0.8),
+    transparent 40%),
+    linear-gradient(
+    180deg,
+    #f4fff6,
+    #dff8e5
+    );
+    min-height:100vh;
+    color:#2d4f35;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:4rem;
+    color:#4ca86a;
+    text-shadow:
+    0 0 15px rgba(255,255,255,.8);
+}
+
+header p{
+    font-size:1.2rem;
+    opacity:.8;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#2d4f35;
+    padding:12px 22px;
+    border-radius:30px;
+    background:rgba(255,255,255,.4);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.6);
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#a9efb6;
+    transform:translateY(-3px);
+}
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+    padding:40px 0;
+}
+
+.card{
+    background:
+    rgba(255,255,255,.45);
+    backdrop-filter:blur(12px);
+    border-radius:25px;
+    padding:30px;
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+    border:1px solid rgba(255,255,255,.7);
+}
+
+.card h2{
+    color:#4ca86a;
+    margin-bottom:15px;
+}
+
+.card p,
+.card li{
+    line-height:1.8;
+}
+
+button{
+    margin-top:15px;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    color:white;
+    background:
+    linear-gradient(
+    135deg,
+    #6ecf82,
+    #44b866
+    );
+    box-shadow:
+    0 5px 15px rgba(76,168,106,.4);
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#4b7254;
+}
